@@ -5,7 +5,7 @@ from openerp import api, fields, models, _
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
     
-    module_account_budget_oca = fields.Boolean(string='account budget',
+    module_account_budget_oca = fields.Boolean(string='Account Budget',
         help='This module allows accountants to manage analytic and crossovered budgets. \n'
             'Once the Budgets are defined (in Invoicing/Budgets/Budgets), the Project Managers \n'
             'can set the planned amount on each Analytic Account. \n'
@@ -15,7 +15,7 @@ class ResConfigSettings(models.TransientModel):
             'view of it. \n'
              '-This installs the module account_budget_oca.')
     
-    module_account_budget_template = fields.Boolean(string='account budget template',
+    module_account_budget_template = fields.Boolean(string='Account Budget Template',
         help='A budget template contains different budgetary positions and defines a periodicity \n'
               'to create with a button the corresponding lines. \n')
 
